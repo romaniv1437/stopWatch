@@ -1,0 +1,64 @@
+.stopwatch__container {
+  max-width: 1100px;
+  min-height: 90vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .stopwatch {
+    padding: 10px;
+    width: 100%;
+    min-height: 180px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: #b6fcb1;
+    border-radius: 5px;
+    .watch {
+      max-width: 200px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0 18px 36px -18px inset;
+      background-color: #a1ce9c;
+      padding: 5px;
+      border-radius: 3px;
+      align-items: center;
+      span {
+        display: flex;
+        gap: 0 8px;
+
+        p {
+          color: #e6e8e6;
+          font-size: 16px;
+        }
+      }
+      h2 {
+        font-size: 35px;
+        color: #e6e8e6;
+      }
+    }
+    .buttons {
+      margin-top: 40px;
+      display: flex;
+      max-width: 400px;
+      width: 100%;
+      justify-content: space-between;
+      button {
+        cursor: pointer;
+        border-radius: 5px;
+        width: 100px;
+        background-color: #a1ce9c;
+        min-height: 40px;
+        color: #e6e8e6;
+        font-size: 16px;
+        &:hover {
+          background-color: #a8daa1;
+        }
+      }
+    }
+  }
+}

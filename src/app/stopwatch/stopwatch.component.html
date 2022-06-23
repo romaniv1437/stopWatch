@@ -1,0 +1,21 @@
+<div class="stopwatch__container">
+  <div class="stopwatch">
+    <div class="watch">
+        <h2>{{ stopWatch | async  }}</h2>
+        <span><p>minutes</p><p>seconds</p></span>
+    </div>
+    <div class="buttons">
+      <div class="buttons_start-stop">
+        <div *ngIf="!this.isOnPause.getValue()">
+          <button (click)="handleStart()">Start</button>
+        </div>
+        <div *ngIf="this.isOnPause.getValue()">
+          <button (click)="handleStop()">Stop</button>
+        </div>
+      </div>
+
+      <button (click)="handlePause()">Wait</button>
+      <button (click)="handleReset()">Reset</button>
+    </div>
+  </div>
+</div>
